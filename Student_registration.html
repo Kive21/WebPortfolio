@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Details</title>
+    </head>
+
+
+    <body>
+        <form action="" method="get">
+            <label for="name"><strong>Name: </strong></label>
+            <input type="text" id="name" name="name" placeholder="Your name">
+
+            <br>
+            <br>
+
+            <label for="course"><strong>Course: </strong></label>
+            <input type="text" id="course" name="course" placeholder="Your course">
+
+            <br>
+            <br>
+
+            <label for="date_of_birth"><strong>Date of Birth: </strong></label>
+            <input type="date" id="date_of_birth" name="date_of_birth">
+
+            <br>
+            <br>
+
+            <label for="address"><strong>Address: </strong></label>
+            <input type="text" id="address" name="address" placeholder="Your address">
+
+            <br>
+            <br>
+            
+            <label for="phoneNumber"><strong>Phone Number: </strong></label>
+            <select id="phoneNumber" name="phoneNumber">
+                <option value="+254">Kenya (+254)</option>
+                <option value="+255">Tanzania (+255)</option>
+                <option value="+256">Uganda (+256)</option>
+            </select>
+            <input type="text" id="phoneNumber" name="phoneNumber" placeholder="712345678">
+
+            <br>
+            <br>
+
+            <label for="email_address"><strong>Email Address: </strong></label>
+            <input type="email" id="email_address" name="email_address" placeholder="example@email.com">
+
+            <br>
+            <br>
+       
+            <fieldset>
+                <legend><strong>Gender: </strong></legend>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                <input type="radio" id="prefer_not_to_say" name="gender" value="prefer_not_to_say">
+                <label for="prefer_not_to_say">Prefer not to say</label>
+            </fieldset>
+
+            <br> <br> <br> <br> <br>
+
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+            <button type="button" onclick="cancelRegistration()">Cancel</button>
+
+            <script>
+                function cancelRegistration() {
+                    alert('Registration canceled.');
+                }
+            </script>
+
+        </form>
+    </body>
+</html>
