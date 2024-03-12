@@ -1,0 +1,119 @@
+/* Common styles for all screen sizes */
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: Courgette;
+}
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+.main-header{
+    text-align: center;
+    background-color: mediumaquamarine;
+    padding: 30px;
+}
+ul{
+    display: flex;
+    gap: 30px;
+}
+li{
+    display: inline;
+}
+.nav a{
+    margin: 0;
+}
+
+.nav a{
+    display: inline-block;
+    padding: .5em;
+    color: black;
+    text-decoration: none;
+}
+
+.nav a:hover{
+    background-color: rgba(239, 162, 162, 0.3);
+}
+
+.main-nav{
+    text-align: center;
+    font-size: 1.1em;
+}
+.content-section p:hover{
+    text-decoration: underline;
+    font-weight: bold;
+}
+#Intro-header{
+    background: none;
+}
+p{
+    background-color: grey;
+    padding: 5px;
+    margin: 50px;
+    font-size: 20px;
+    color: black;
+}
+.header{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+.Skills{
+    display: flex;
+    margin: 10px;
+}
+#Skill-1{
+    background: lightseagreen;
+    padding: 15px;
+}
+#Skill-2{
+    background: lightcoral;
+    padding: 15px;
+}
+#Skill-3{
+    background: lightsteelblue;
+    padding: 15px;
+}
+#Skill-4{
+    background: lightslategray;
+    padding: 15px;
+}
+#Skill-5{
+    background: lightgreen;
+    padding: 15px;
+}
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+
+}
+.main-footer{
+    background-color: aqua;
+    color: black;
+    padding: .25em 0;
+}
+.main-footer-container{
+    display: flex;
+    align-items: center;
+}
+.main-footer-container{
+    flex-grow: 1;
+    text-align: end;
+}
+.footer-nav li{
+    padding: 0 .5em;
+}
+.footer-nav img{
+    width: 30px;
+    height: 30px;
+}
+
+/* Media query for screens with a maximum width of 767 pixels */
+@media screen and (max-width: 767px) {
+    * {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 14px; 
+    }
+}
